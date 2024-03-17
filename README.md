@@ -14,7 +14,7 @@
 Panel event study models seek to estimtate the impact of some policy or event adopted in certain groups and time periods, by comparing evolution of outcomes in adoption groups to groups which do not adopt the event.  Specifically, the panel event study is estimated as: 
 
 ```math
-y_{gt}= \alpha + \sum_{j=2}^J\beta_j(Lead_j)_{gt} + \sum_{k=0}^K (Lag_k)_{gt} + \mu_g + \lambda_t + X_{gt}^\prime+\varepsilon_{gt}
+y_{gt}= \alpha + \sum_{j=2}^J\beta_j(Lead_j)_{gt} + \sum_{k=0}^K \gamma_k (Lag_k)_{gt} + \mu_g + \lambda_t + X_{gt}^\prime+\varepsilon_{gt}
 ``` 
 
 where $y_{gt}$ refers to outcomes for group $g$ and time period $t$, $\mu_g$ and $\lambda_t$ refer to group and time-fixed effects respectively, and, optionally, $X_{gt}$ refers to time-varying controls.  Lags and leads refer to indicators for periods pre- and post-event occurrence, and are defined as follows:
